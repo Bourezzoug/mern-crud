@@ -6,6 +6,7 @@ const PORT = process.env.PORT
 
 
 const workoutRouter = require('./routes/workoutRoutes')
+const userRouter = require('./routes/userRoutes')
 
 const app = express()
 
@@ -18,6 +19,7 @@ app.use(cors());
 
 // Routes
 app.use('/api/workouts',workoutRouter)
+app.use('/api/users',userRouter)
 
 
 
